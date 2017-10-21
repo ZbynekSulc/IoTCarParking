@@ -3,6 +3,8 @@
 14CORE ULTRASONIC DISTANCE SENSOR CODE TEST
 ********************************************
 */
+#include "Display.h"
+
 #define TRIGGER 5
 #define ECHO    4
 
@@ -14,10 +16,12 @@ void setup() {
   pinMode(TRIGGER, OUTPUT);
   pinMode(ECHO, INPUT);
   pinMode(BUILTIN_LED, OUTPUT);
+  displaySetup();
 }
 
-void loop() {
-  
+void loop() 
+{
+  displayClear();
   long duration, distance;
   digitalWrite(TRIGGER, LOW);  
   delayMicroseconds(2); 
@@ -31,5 +35,8 @@ void loop() {
   
   Serial.print(distance);
   Serial.println("Centimeter:");
+
+
+  displayShow();
   delay(1000);
 }
