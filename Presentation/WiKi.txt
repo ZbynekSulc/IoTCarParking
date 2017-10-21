@@ -1,3 +1,14 @@
 Distance measurment
 =======================
 http://www.14core.com/wiring-esp8266-nodemcu-with-hcsr04-ultrasonic-sensor/
+
+=========
+https://github.com/gloveboxes/Arduino-ESP8266-Secure-Mqtt-Azure-IoT-Hub-Client
+
+=========
+http://www.instructables.com/id/Programming-ESP8266-ESP-12E-NodeMCU-Using-Arduino-/
+
+
+Konkurence
+=============
+http://axelta.com/Smart_Parking_IOT.php
